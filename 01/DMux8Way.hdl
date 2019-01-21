@@ -16,5 +16,11 @@ CHIP DMux8Way {
     OUT a, b, c, d, e, f, g, h;
 
     PARTS:
-    // Put your code here:
+    DMux(in=in, sel=sel[2], a=ao, b=bo);
+    DMux(in=ao, sel=sel[1], a=ao2, b=bo2);
+    DMux(in=bo, sel=sel[1], a=co, b=do);
+    DMux(in=ao2, sel=sel[0], a=a, b=b);
+    DMux(in=bo2, sel=sel[0], a=c, b=d);
+    DMux(in=co, sel=sel[0], a=e, b=f);
+    DMux(in=do, sel=sel[0], a=g, b=h);
 }
