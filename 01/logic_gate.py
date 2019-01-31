@@ -1,4 +1,4 @@
 i = 0
 while i < 16:
-	print("FullAdder(a=a[" +str(i)+ "], b=b[" +str(i)+ "], c=carry"+str(i)+", sum=out[" +str(i)+ "], carry=carry"+str(i)+";");
+	print("Bit(in=in[" +str(i)+ "], load=load, out=out[" +str(i)+ "]);");
 	i += 1
